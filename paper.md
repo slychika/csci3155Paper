@@ -1,19 +1,23 @@
-#Paper#
+#Generics and their impact on the Java Community#
 ##Principals of Programming Languages##
 Heather L. Dykstra
 Caitlin E. Hickey
 Michael D. Williams
 
+On May 11, 1999 the Java Specification Request of adding generic types to the Java Programing Language was aproved. Years later the Final Release was published. This was on September 30, 2004 but the main community arguments happened between the two dates. From the 18th of May 1999 until August 1, 2001 the public had the opportunity to review and create the implementation. Even after such an extensive process, we could not make everyone happy. The following contains the aftermath, when the community responds to JSR 14.
 
 
-helpful links so far
-  
-Michael Williams	5:30 PM
+
+
+
+Sources:
+
 http://jcp.org/en/jsr/all
+
+http://jcp.org/en/jsr/detail?id=14
+
 http://openjdk.java.net/jeps/0
-	
-Caitlin Hickey	5:58 PM
+
 http://en.wikipedia.org/wiki/Generics_in_Java
-	
-Michael Williams	6:01 PM
+
 http://docs.oracle.com/javase/tutorial/java/generics/types.html
