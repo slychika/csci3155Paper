@@ -39,3 +39,6 @@ http://en.wikipedia.org/wiki/Generics_in_Java
 http://docs.oracle.com/javase/tutorial/java/generics/types.html
 
 http://docs.oracle.com/javase/tutorial/java/generics/why.html
+
+
+-note: leaving blanks is like using generics... -
