@@ -9,9 +9,9 @@ Partners: Heather L. Dykstra, Caitlin E. Hickey, Michael D. Williams
 Group Paper To Do List
 
 - [x] Find Topic (JSR 14)
-- [ ] Get Sources
+- [x] Get Sources
 - [ ] Write Paper (1000-1500 words)
-- [ ] First Draft (April 22)
+- [x] First Draft (April 22)
 - [ ] Final Draft (May 2)
 - [ ] Make Presentation (20 slides, 5 minutes)
 - [ ] Practice Presentation (Google+)
