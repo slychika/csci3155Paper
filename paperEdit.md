@@ -15,9 +15,11 @@ Programming with generics is a style supported by many languages (C#, C++, .Net,
 On May 11, 1999 the Java Specification Request of adding generic types to the Java Programming Language was approved.  The final release was published on September 30, 2004 but the main community arguments happened between the two dates. From the 18th of May 1999 until August 1, 2001 the public had the opportunity to review and create the implementation. 
 
 In support of Java Generics, Gilad Bracha said, "Calling legacy code from generic code is inherently dangerous; once you mix generic code with non-generic legacy code, all the safety guarantees that the generic type system usually provides are void. However, you are still better off than you were without using generics at all. At least you know the code on your end is consistent." This explifies the advantages of using generics, especially in specific cases. Other advantages to Java Generics include efficiency and type safety, especially with respect to collections.  Prior to generics being implemented, members of collections were treated as objects, regardless of what type of object they were. Code that placed objects of two or more types in a collection would compile nicely, as the compiler did not differentiate between these types, but threw errors at run time. Below is an example of code that will compile but throw runtime errors: 
-	List v = new ArrayList();
-  	v.add("test");
-  	Integer i = (Integer)v.get(0);
+	
+	> List v = new ArrayList();
+  	> v.add("test");
+  	> Integer i = (Integer)v.get(0);
+
 The problem is that the code adds a string to a List, but then tries to retrieve that string as an integer.  Adding generics to Java solved problems like the one above.  One of the other main advantages to generic programming in Java is that once a type has been declared for a collection, the compiler will not allow you to place an object of a different type in that collection.  Generics in Java can be used in classes, collections, and methods.  Another advantage to generics is that programmers do not necessarily have to know what type of object will be used by a method they are writing, just that the type supports the operator or operators which they are using in the method.  A classic example is the max method below:
 
 	>  template <typename T>
