@@ -25,11 +25,28 @@ The problem is that the code adds a string to a List, but then tries to retrieve
 	return (b < a) ? a : b;
 	} 
 
-Any type can work with this method, so long as the less than (<) operator is defined for that type.  
+Any type can work with this method, so long as the less than (<) operator is defined for that type. 
+Java generics also implemented something known as wildcard types. Wildcard types, written List<?>, are the supertype of lists. The compiler would read this as a List of unknown because you can't add anything, except null, to List<?>, but you can retrieve things and treat them as Objects. Wildcards can have upper and lower bounds, where List<? extends Drinks> would be a List of items that have unknown type but are Drinks and List<? super Drinks> is a List of items that have an unknown type but are supertypes of Drinks. You would use an upper bound wildcard for reading/input and a lower bound wildcard for writing/output. Here's some example code using wildcards:
 
-	***maybe add something about migration compatibility? river's journal pg 55
+	class Bar<T> {
+	    void buy(int howMany, List<? super T> fillDrink {... }
+	    void puke(List<? extends T> throwUpDrink) {...}
+	    ...
+	}
 
-One of the main criticisms of generics is that they are unnecessary and unnecessarily complicated.  Ken Arnold, a blogger with Java.net, commented that the Java community had survived without generics for more than five years, and that the complexity they added outweighs the benefits of having them.  His main argument is that while generics seem simple enough, there are certain very specific instances in which they should not be used, and those instances are difficult to understand.  Additionally, a blogger on facsim.org argues that generics are basically a waste because they provide the same output as code without generics.  This blogger also commented that the Java compiler removes all traces of generics, essentially leaving the code as it would have been had you coded without them in the first place.  This is referred to as erasure, and has other side-effects that may be unwanted.  The purpose of this implementation was to allow the Java community to use generics without having to make signigicant changes to the Java Virtual Machine. While erasure allows for backwards compatibility allowing for legacy non-generic libraries, you can't see what type a generic class is using at run-time. As an example, with type erasure, a List<string> would be converted to type List at compile-time.  Another problem is that generics are not co-variant.  This means that a subtype of a class cannot be substituted for an object of that class in a generics setting:
+	Bar<Drink> bartender = new Bar<Drink>();
+	List<Vodka> shot = ...;
+	List<Shot> tooMuchAlcohol = ...;
+	
+	//Buy vodka from the Bar
+	bartender.buy(3, shot);
+	//You can puke up the shot the Bar gave you...
+	bartender.puke(tooMuchAlcohol);
+
+So you can buy from the bartender, (with super), and you can puke up your drink (with extend). 
+
+	
+	One of the main criticisms of generics is that they are unnecessary and unnecessarily complicated.  Ken Arnold, a blogger with Java.net, commented that the Java community had survived without generics for more than five years, and that the complexity they added outweighs the benefits of having them.  His main argument is that while generics seem simple enough, there are certain very specific instances in which they should not be used, and those instances are difficult to understand.  Additionally, a blogger on facsim.org argues that generics are basically a waste because they provide the same output as code without generics.  This blogger also commented that the Java compiler removes all traces of generics, essentially leaving the code as it would have been had you coded without them in the first place.  This is referred to as erasure, and has other side-effects that may be unwanted.  The purpose of this implementation was to allow the Java community to use generics without having to make signigicant changes to the Java Virtual Machine. While erasure allows for backwards compatibility allowing for legacy non-generic libraries, you can't see what type a generic class is using at run-time. As an example, with type erasure, a List<string> would be converted to type List at compile-time.  Another problem is that generics are not co-variant.  This means that a subtype of a class cannot be substituted for an object of that class in a generics setting:
  
 
 	List<Towel> towels = new ArrayList<Towel>();
@@ -53,7 +70,7 @@ Another disadvantage of the way generics are implemented in Java is that all ins
 
 The problem with this is that ls ends up pointing to an object of a completely different type.  This is partially made possible by erasure, and will likely result in a ClassCastException at runtime, but will not cause a compile time error.
 
-Generics are complicated and due to the way that Oracle implemented them, people argue a lot about their usefulness. If Oracle would have approached the problem differently and been willing to change the Java Virtual Machine (or JVM), they could have made a better addition to the Java library. An addition, that the general community might like better and use much more often. However, generics are useful in certain and specific circumstances and many coders use them despite their drawbacks.  
+Generics are complicated and due to the way that Oracle implemented them, people argue frequently about their usefulness. Had Oracle approached the problem differently and been willing to change the Java Virtual Machine (or JVM), they could have made a better addition to the Java library which the general community might use much more often. However, generics are useful in certain specific circumstances and many coders use them despite their drawbacks.  
 
 
 
