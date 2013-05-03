@@ -1,0 +1,340 @@
+Caitlin Hickey
+
+Just added version 2 of my rough draft. It's very rough and needs a lot of work, but it has the beginnings of a Pros paragraph and the beginnings of the Why generics paragraph. It's in the dropbox
+
+
+
+
+April 16
+11:07am
+Heather Dykstra
+
+okay brilliant
+
+
+i'll see what i can do today
+
+Caitlin Hickey
+
+Michael, did you want to add a paragraph to the paper on wildcards?
+
+
+Heather Dykstra
+
+hey, michael, if u could finish the paper tonight with wilcard stuff, that would rock. that way i can finish the pdf tmrrw
+
+
+
+
+9:17pm
+Heather Dykstra
+
+also, caitlin, anything on compatablity?
+
+
+also, i'll b in boulder all day tmrrw
+
+
+
+
+9:18pm
+Caitlin Hickey
+
+reading through the stuff now
+
+
+I'm trying to decide if we want to add that or not... the paper has a nice flow to it as it is
+
+
+
+
+9:18pm
+Heather Dykstra
+
+OH! okay, you are brilliant
+
+
+it does, i just re-read it
+
+
+i quite like it
+
+
+we just need a bit about wildcards
+
+
+
+
+9:19pm
+Caitlin Hickey
+
+I agree- it flows nicely. The difficult part is going to be reflecting that in the presentation
+
+
+
+
+9:20pm
+Heather Dykstra
+
+yeah, thats why im staying tmrrw.
+
+
+it is my one and only goal for a glorious Monday, to make a wonderful, beautiful and intelligent lightning talk.
+
+
+
+9:49pm
+Michael Williams
+
+Oops sorry I saw Caitlin had posted a status on friday saying the paper was done so I didn't add the wild cards part to it xD I'll add that nw
+
+
+
+
+9:53pm
+Heather Dykstra
+
+it was mostly a joke because we reached 1001 words and knew u still had things to add...
+
+
+
+
+9:55pm
+Michael Williams
+
+Haha I clearly did not get the joke 
+
+
+
+
+9:55pm
+Heather Dykstra
+
+its ok
+
+
+thats why i messaged u
+
+
+
+
+9:57pm
+Michael Williams
+
+Is the most up-to-date paper on github or dropbox?
+
+
+
+
+9:57pm
+Heather Dykstra
+
+dropbox and paperedit(2).md
+
+
+make urs 3
+
+
+for version control sake
+
+
+
+
+10:06pm
+Caitlin Hickey
+
+So... I've read the stuff on migration compatibility, but I just don't think there's a good place to put it in our paper. It's more of a strategy oracle took in implementation than a pro or con
+
+
+
+
+
+10:07pm
+Heather Dykstra
+
+okay, well if we needed fluff i'd say add it to the timeline, but if we dont, i wouldnt worry about it
+
+
+
+10:22pm
+Caitlin Hickey
+
+michael, are you in for working on the project tomorrow 5:30-7 at kitt fields?
+
+
+
+
+10:23pm
+Michael Williams
+
+Yeah I get off work at 5 so I can make that 
+
+
+
+
+10:23pm
+Caitlin Hickey
+
+sweet- we'll get the details ironed out then
+
+
+
+
+
+10:23pm
+Heather Dykstra
+
+wonderful, sounds perfect
+
+
+
+
+11:09pm
+Michael Williams
+
+I added stuff for wildcards into the dropbox
+
+
+Let me know if you want me to change anything or add/take something out
+
+
+
+
+
+11:12pm
+Heather Dykstra
+
+kk
+
+
+will do
+
+
+
+
+11:13pm
+Caitlin Hickey
+
+Heather, when you open this in sublime, are the colors all weird?
+
+
+
+
+11:13pm
+Michael Williams
+
+Yeah it does that for me too i
+
+
+*it's cause of the ? in the List<?>
+
+
+
+
+
+11:14pm
+Heather Dykstra
+
+i use markdown pad
+
+
+
+
+11:14pm
+Michael Williams
+
+But i opened it in markdown pad and it looks fine I think
+
+
+
+
+
+11:14pm
+Heather Dykstra
+
+but THAT IS
+
+
+what should happen
+
+
+
+
+11:14pm
+Caitlin Hickey
+
+so does it look okay in markdown pad?
+
+
+
+
+
+11:15pm
+Heather Dykstra
+
+yepp
+
+
+
+
+11:15pm
+Caitlin Hickey
+
+okay- that's what I care about
+
+
+
+
+
+11:16pm
+Heather Dykstra
+
+yeah:)
+
+
+i can do final formatting tmrrw
+
+
+
+
+
+
+
+12:12am
+Caitlin Hickey
+
+It looks good- do we want to do more commenting on the wildcard code?
+
+
+I mean after the code example- explaining what is going on
+
+
+
+
+Monday
+
+3:24pm
+Heather Dykstra
+
+yes, we should do that
+
+
+
+
+
+
+
+Today
+12:04am
+Caitlin Hickey
+
+Hey guys, go to the paper and look at the chalk crayon code example. It doesn't have generics in it. We need to fix that, right?
+
+
+
+
+Today
+7:40am
+Heather Dykstra
+
+wait.... thats not right
