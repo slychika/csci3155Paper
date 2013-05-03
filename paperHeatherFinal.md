@@ -93,3 +93,13 @@ http://docs.oracle.com/javase/tutorial/java/generics/why.html
 http://www.cs.umd.edu/users/meesh/420/Notes/JAVANotes/java_generics-jmeister.pdf
 
 http://www.angelikalanger.com/GenericsFAQ/FAQSections/TechnicalDetails.html#What is heap pollution?
+
+http://lambda-the-ultimate.org/node/804
+
+http://www.ibm.com/developerworks/java/library/j-jtp01255/index.html
+
+http://programmers.stackexchange.com/questions/22642/what-is-wrong-with-javas-generics
+
+http://stereolambda.com/2009/10/23/java-generics-were-they-a-good-idea/
+
+http://c2.com/cgi/wiki?GenericProgrammingIsBetter
